@@ -1,6 +1,10 @@
 # Signpeaker
 Set your Discord status as your currently playing Spotify song
 
+![1.png](imgs/1.png) ![2.png](imgs/2.png) ![3.png](imgs/3.png)
+
+![4.png](imgs/4.png)
+
 # Before You Begin
 You might want to consider running this script on your (private) server in a `tmux` session; not your local PC, since it needs to listen for HTTP(S) requests and we also want it to run 24/7.
 
