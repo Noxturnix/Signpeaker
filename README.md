@@ -4,7 +4,7 @@ Set your Discord status as your currently playing Spotify song
 # Before You Begin
 You might want to consider running this script on your (private) server in a `tmux` session; not your local PC, since it needs to listen for HTTP(S) requests and we also want it to run 24/7.
 
-If you found that this manual is confusing, I'm so sorry for my bad English :p I would really appreciate your contribution for this project, especially this README.md
+If you found that this manual is confusing, I'm so sorry for my bad English :p I would really appreciate your contributions for this project, especially this README.md
 
 Also, this script was recreated from my orignal script for personal use. I'm not responsible for anything that happens to your account.
 
