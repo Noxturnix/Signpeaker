@@ -55,8 +55,8 @@ You may want to change these settings as your preferred value
 - `status_message` (str) Your Discord status message. It can also be formatted. See [Status Message Format](#status-message-format)
 - `clear_status_after` (int) Discord should automatically clear your status after n second(s); `1800` for 30 minutes, `3600` for 1 hour etc.
 - `max_artists` (int) Max amount of artist names that should be replaced to `[ARTISTS]`
-- `emoji_id` (str) Emoji ID you want to use in your Discord status
-- `emoji_name` (str) Emoji name. Discord appears to accept all names but you may want to set this to the name of `emoji_id` just in case
+- `emoji_id` (str) Custom Emoji ID you want to use in your Discord status
+- `emoji_name` (str) Standard emoji unicode. If `emoji_id` is set, this should be the name of it
 - `timezone` (str) Timezone string for log messages; `Asia/Bangkok`, `America/Los_Angeles`, `UTC` etc.
 - `fetch_delay` (int) Delay in second for each Spotify API requests
 
