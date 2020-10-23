@@ -200,6 +200,7 @@ def statusUpdater():
 													jsonData["custom_status"]["expires_at"] = (datetime.datetime.utcnow() + datetime.timedelta(seconds=SETTINGS["clear_status_after"])).isoformat()[:-3] + "Z"
 												if SETTINGS["emoji_id"]:
 													jsonData["custom_status"]["emoji_id"] = SETTINGS["emoji_id"]
+												if SETTINGS["emoji_name"]:
 													jsonData["custom_status"]["emoji_name"] = SETTINGS["emoji_name"]
 
 												logInfo("Updating Discord status to: " + status_message)
