@@ -158,7 +158,7 @@ def spotifyUserLogin(req, rresp):
 
 
 def statusUpdater():
-	retry_delay = 10
+	retry_delay = 5
 	crash_retry_delay = 3
 	while True:
 		try:
@@ -180,7 +180,7 @@ def statusUpdater():
 								if spotifyResp.status_code in [200, 204]:
 									if spotifyResp.status_code == 200:
 										spotifyJsonResp = spotifyResp.json()
-										if spotifyJsonResp["is_playing"]:
+										if spotifyJsonResp["item"] and spotifyJsonResp["is_playing"]:
 
 											artist_list = [artist["name"] for artist in spotifyJsonResp["item"]["artists"]]
 
@@ -269,7 +269,7 @@ def statusUpdaterDaemon():
 	global SETTINGS
 	global allow_spotify_login
 	statusUpdaterStarted = False
-	retry_delay = 10
+	retry_delay = 5
 	crash_retry_delay = 3
 	while True:
 		try:
